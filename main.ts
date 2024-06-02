@@ -17,12 +17,12 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
     basic.setLedColors(basic.rgb(0, tasteBempfangen * 255, 0), 0x000000, basic.rgb(0, tasteAempfangen * 255, 0))
     if (tasteAempfangen == 1) {
-        calliBot2E.motor(C2eMotor.links, C2eDir.vorwärts, 50)
+        calliBot2E.motor(C2eMotor.links, C2eDir.vorwärts, 100)
     } else {
         calliBot2E.motorStop(C2eMotor.links, C2eStop.Frei)
     }
     if (tasteBempfangen == 1) {
-        calliBot2E.motor(C2eMotor.rechts, C2eDir.vorwärts, 50)
+        calliBot2E.motor(C2eMotor.rechts, C2eDir.vorwärts, 100)
     } else {
         calliBot2E.motorStop(C2eMotor.rechts, C2eStop.Frei)
     }
